@@ -1,5 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import { Editor, EditorContext } from '@atlaskit/editor-core';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <EditorContext>
+          <Editor />
+        </EditorContext>
       </header>
     </div>
   );
